@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("fonts/MyFont.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "MyFont", sans-serif;
+  font-size: 16px;
+}
+/* Frontpage cover */
+.frontCover-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.blank-page{
+  background: none;
+}
+.blank-page-bck {
+  background: #f9f4e9;
+  width: 100%;
+  height: 100%;
+}
+.wrapper-page {
+  width: 210mm;
+  height: 297mm;
+  background-color: #ffd580;
+  position: relative;
+  font-size: 20px;
+}
+.cover-title {
+  text-align: center;
+  font-size: 30px;
+}
+.cover-title > h2 {
+  text-transform: uppercase;
+}
+
+.front-image img {
+  display: block;
+  width: 140mm;
+  height: auto;
+  margin: 0 auto;
+}
+.line1,
+.line2,
+.line3 {
+  margin: 61px auto;
+  line-height: 2.5;
+  width: 350px;
+  height: 1px;
+  background: black;
+}
+.line2 {
+  margin: 80px auto;
+}
+.line3 {
+  margin: 90px auto;
+}
+
+.cover-page {
+  width: 492px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Backpage cover */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.container img{
+  height: auto ;
+  max-width: 100%;
+  margin-top: 4rem;
+}
+.pages {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+}
+/* Pages */
+.wrapper-1 {
+  position: relative;
+  border: 2px solid #cc6600;
+  background-color: #fff8dc;
+}
+.frontpage-container,
+.backpage-container {
+  width: 210mm;
+  height: 297mm;
+  position: relative;
+  padding: 10mm 10mm 10mm 15mm;
+}
+.bck-color {
+  background-color: #f9f0ff;
+}
+
+.subject {
+  text-align: left;
+  padding: 20px;
+  color: #996633;
+}
+.subj-name {
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  width: 600px;
+}
+.topic {
+  border-bottom: 1px solid black;
+  width: 600px;
+}
+.page {
+  margin-left: 90%;
+  font-weight: 500;
+}
+.page1-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  height: calc(100% - 150px);
+}
+.notes {
+  position: relative;
+  padding-left: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.notes::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+}
+.notes img {
+  height: 71px;
+  position: absolute;
+  top: -41px;
+  left: -12px;
+  transform: rotate(-24deg);
+  z-index: 9999;
+}
+.notes .pinhole {
+  position: absolute;
+  left: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  border: 1px solid #fff;
+  top: 20px;
+}
+.notes-1 {
+  border: 1px solid #996633;
+  background: rgba(153, 102, 51, 0.1);
+  position: relative;
+}
+.notes-1::before {
+  background-color: #996633;
+}
+
+.notes-2 {
+  border: 1px solid #ff7f50;
+  background: rgba(255, 127, 80, 0.1);
+  position: relative;
+}
+.notes-2::before {
+  background-color: #ad9e99;
+}
+
+.notes-3 {
+  border: 1px solid #e9967a;
+  background: rgba(233, 150, 122, 0.1);
+}
+.notes-3::before {
+  background-color: #e9967a;
+}
+.notes-4 {
+  border: 1px solid #800020;
+  background: rgba(128, 0, 32, 0.1);
+}
+.notes-4::before {
+  background-color: #800020;
+}
+.note-line {
+  border-bottom: 1px dashed #996633;
+  height: 45px;
+  background: linear-gradient(
+    to bottom,
+    transparent 90%,
+    rgba(153, 102, 51, 0.2) 100%
+  );
+}
+/* Back-page container */
+
+.line {
+  border-bottom: 1px dashed #996633;
+  height: 56px;
+  background: linear-gradient(
+    to bottom,
+    transparent 90%,
+    rgba(153, 102, 51, 0.2) 100%
+  );
+}
+.before-line {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.before-line::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+}
+
+@page {
+  margin: 0;
+}
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .sheet {
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+
+  .frontpage-container,
+  .backpage-container {
+    page-break-after: auto !important;
+  }
+}
+
+
+
