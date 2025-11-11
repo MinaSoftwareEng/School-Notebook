@@ -19,5 +19,18 @@ git clone https://github.com/MinaSoftwareEng/School-Notebook.git
 # Navigate into the folder
 cd notebook-for-print
 
-# Install dependencies
+#Start a local server
+- Open the folder in VS Code
+- Make sure you have the Live Server extension installed
+- Click the "Go Live" button in the bottom-right corner of VS Code
+
+
+# Open it in your browser
 https://localhost:3000/notebook-1.html
+
+```
+## 🔧 Built With
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
