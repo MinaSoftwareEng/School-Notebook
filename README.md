@@ -1,4 +1,4 @@
-# 📘 Project Title
+# 📘 School Notebook
 The main purpose of the notebook is to help children learn how to take short notes during their classes. Each page includes space for the subject name, the lesson topic, and brief notes to capture the key points discussed in class. On the back side of each note page, children can write a summary of the main ideas that need to be remembered.
 
 The notebook contains 20 pages, allowing children to use it across multiple subjects. As we know, note-taking is an essential skill that should be developed from an early age. It helps children identify the main points of a topic, emphasize important details, and later use their notes to recall what was discussed in class.
