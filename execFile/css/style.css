@@ -15,6 +15,28 @@ body {
   font-family: "MyFont", sans-serif;
   font-size: 16px;
 }
+.download-pdf {
+  width: 210mm;
+  height: 5rem;
+  border: 2px solid #1a5047;
+  background: #0d7a49;
+  padding: 10px;
+  font-size: 2em;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  align-content: center;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+  z-index: 999;
+}
+.download-pdf:hover{
+  background-color: #ccc;
+  transform: scaleY(1.2);
+}
+.download-pdf a{
+  text-decoration: none;
+  color: white;
+}
 /* Frontpage cover */
 .frontCover-container {
   display: flex;
