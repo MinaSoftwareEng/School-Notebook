@@ -7,6 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body{
+  overflow-x: hidden;
+}
 
 body {
   display: flex;
@@ -253,6 +256,42 @@ body {
   bottom: 0;
   width: 2px;
 }
+
+
+/* responsive design for Mobile phones */
+
+@media (max-width: 480px) {
+  .wrapper {
+    transform: scale(0.54);
+    transform-origin: top center;
+  }
+  .download-pdf{
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    transform: scale(0.5);
+    transform-origin: top center;
+  }
+  .download-pdf{
+    font-size: 1.8em;
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    transform: scale(0.4);
+    transform-origin: top center;
+  }
+  .download-pdf {
+    font-size: 1.6em;
+    width: fit-content;
+  }
+}
+
 
 @page {
   margin: 0;
